@@ -19,9 +19,8 @@ function RoutesApp() {
       <Titulo subTit='soy un subtitulo'/>
       </NavBar>
 
-      <ItemListContainer />
+      <ItemListContainer saludo={fnMensaje} />
 
-      <div saludo={fnMensaje}> </div>
      
       
 

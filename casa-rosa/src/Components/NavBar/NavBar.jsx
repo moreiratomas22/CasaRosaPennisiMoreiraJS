@@ -23,7 +23,7 @@ function NavBar( {children} ) {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets"> <button> Presionar </button></Nav.Link>
+      <Nav.Link href="#deets"> Usuarios </Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
         <CartWidget />
       </Nav.Link>
