@@ -3,8 +3,10 @@ import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import CartWidget from '../CartWidget/CartWidget'
 
-function NavBar() {
+function NavBar( {children} ) {
+  console.log(children)
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
@@ -21,9 +23,9 @@ function NavBar() {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets"> Contacto</Nav.Link>
+      <Nav.Link href="#deets"> <button> Presionar </button></Nav.Link>
       <Nav.Link eventKey={2} href="#memes">
-        Clase ReactJs
+        <CartWidget />
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
