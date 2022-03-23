@@ -26,9 +26,9 @@ function RoutesApp() {
 
       <ItemListContainer saludo={fnMensaje} />
 
-      <hr/>
+      
 
-      <ItemCount onAdd={onAdd} />
+      
   
      
       

@@ -1,12 +1,15 @@
+import '../Components/ItemList/ItemList'
+import ItemList from '../Components/ItemList/ItemList';
 
-
-function ItemListContainer( {saludo} ) {
+const ItemListContainer = () => {
   return (
-    <>
-    <div>ItemListContainer</div>
-    <button onClick={saludo}>HAZ CLICK AQUI</button>
-    </>
-  )
-}
+    <section className="item-list-container">
+      <br />
+      <h2 className="item-list-container__title">Productos seleccionados</h2>
 
-export default ItemListContainer
+      <ItemList />
+    </section>
+  );
+};
+
+export default ItemListContainer;
